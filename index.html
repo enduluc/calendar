@@ -1,101 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notion Ticker Tape</title>
-<!--    <link rel="stylesheet" href="style.css" /> -->
-  </head>
-  <body class="dark">
-    <!-- Light/Dark Btn -->
-<!--    <div class="settings">
-      <div class="modes">
-        <button class="light">Light</button>
-        <button class="dark">Dark</button>
-      </div>
-    </div>
-    <!-- TradingView Light Widget BEGIN -->
-    <div class="tradingview-widget-container" id="dark">
-      <div class="tradingview-widget-container__widget"></div>
-     <!-- <div class="tradingview-widget-copyright">
-        <a href="https://www.tradingview.com" rel="noopener" target="_blank"
-          ><span class="blue-text">Ticker Tape</span></a
-        >
-        by TradingView -->
-      </div>
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-        async
-      >
-        {
-          "symbols": [
-            {
-              "proName": "FOREXCOM:SPXUSD",
-              "title": "S&P 500 Index"
-            },
-            {
-              "description": "Nasdaq 100 Index",
-              "proName": "NASDAQ:NDX"
-            },
-            {
-              "description": "Dow Jones Index",
-              "proName": "SPREADEX:DJI"
-            },
-            {
-              "description": "FTSE UK Index",
-              "proName": "SPREADEX:FTSE"
-            },
-            {
-              "description": "German stock index DAX 40 ",
-              "proName": "XETR:DAX"
-            },
-            {
-              "description": "Nikkei Index",
-              "proName": "VANTAGE:NIKKEI225"
-            },
-            {
-              "description": "Volatility S&P 500 Index",
-              "proName": "PEPPERSTONE:VIX"
-            },
-            {
-              "description": "Grayscale BTC ETF",
-              "proName": "AMEX:GBTC"
-            },
-            {
-              "description": "Fidelity Wise Origin ETF",
-              "proName": "AMEX:FBTC"
-            },
-            {
-              "description": "ARK 21Shares ETF",
-              "proName": "AMEX:ARKB"
-            },
-            {
-              "description": "Bitwise ETF",
-              "proName": "AMEX:BITB"
-            },
-            {
-              "description": "Gold Price",
-              "proName": "FOREXCOM:XAUUSD"
-            },
-            {
-              "description": "Bitcoin Price",
-              "proName": "INDEX:BTCUSD"
-            },
-            {
-              "description": "Ethereum Price",
-              "proName": "BITSTAMP:ETHUSD"
-            } 
-          ],
-          "showSymbolLogo": true,
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "displayMode": "compact",
-          "locale": "en"
-        }
-      </script>
-    </div>
-    <!-- TradingView Widget END -->
-    <script src="app.js"></script>
-  </body>
-</html>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+  {
+  "width": "100%",
+  "height": "100%",
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en",
+  "importanceFilter": "0,1",
+  "countryFilter": "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
